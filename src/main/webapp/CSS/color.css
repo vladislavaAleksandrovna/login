@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Averia+Sans+Libre);
+
+body {font-family:"Averia Sans Libre";font-size:40px;
+    background: lavenderblush;
+    opacity: 0.8;}
+.container {position:relative;width:400px;margin:100px auto 0;text-align:center;}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper{
+    text-align: center;
+    color: black;
+
+}
+
+
+.button-6 {
+    background: transparent;
+    border-width: 0;
+    position: relative;
+    cursor: pointer;
+    font-family: "Averia Sans Libre" ;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.button-6 span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    background: lavenderblush;
+    color: black;
+    padding: 0 30px;
+    line-height: 40px;
+}
+
+.button-6:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    left: -5px;
+    top: -5px;
+    background: mediumvioletred;
+    z-index: 1;
+    transition: .4s ease-out;
+}
+
+.button-6:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    right: -5px;
+    bottom: -5px;
+    background: purple;
+    transition: .4s ease-out .1s;
+}
+
+.button-6:hover:before {
+    transform: translate(5px, 5px);
+}
+
+.button-6:hover:after {
+    transform: translate(-5px, -5px);
+}
+
+
+
+
+
